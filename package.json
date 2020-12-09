@@ -8,8 +8,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "drei": "^2.2.10",
     "next": "10.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-three-fiber": "^5.3.7",
+    "styled-components": "^5.2.1",
+    "three": "^0.123.0"
+  },
+  "devDependencies": {
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^6.0.0"
   }
 }
