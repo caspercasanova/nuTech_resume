@@ -1,41 +1,50 @@
-import React, { Suspense } from 'react';
-import { Canvas } from 'react-three-fiber';
-import { OrbitControls } from 'drei';
-import styled from 'styled-components';
 import styles from '../../styles/Home.module.css';
-import journalEntries from './JournalEntries';
-
+import styled from 'styled-components';
+import React, { useState, Suspense, useRef } from 'react';
+import { Canvas, useFrame } from 'react-three-fiber';
+import { OrbitControls } from 'drei';
 import Marker from './Marker';
 import Globe from './Globe';
+import Journal from './Journal';
+import journalEntries from './journalEntries';
 
 const EarthJournalContainer = styled.div`
-  width: 700px;
-  height: 500px;
-  border: 1px solid #131a22;
   display: flex;
+  width: 100%;
+  /* border: 1px solid #131a22; */
+  background-color: #131a22;
 `;
 
-const GlobeCanvas = () => {
+const GlobeCanvas = ({ idx, setIdx }) => {
   return (
     <Canvas className={styles.globe_canvas} camera={{ position: [0, 0, 25] }}>
-      <OrbitControls />
+      <OrbitControls maxDistance={25} minDistance={10} />
       <ambientLight intensity={1} />
       <Suspense fallback={<>...Loading</>}>
-        <Globe />
+        <Globe idx={idx} setIdx={setIdx} />
       </Suspense>
       {journalEntries.map((journalEntry, index) => (
-        <Marker key={index} journalEntry={journalEntry} earthRadius={7} />
+        <Marker
+          key={index}
+          journalEntry={journalEntry}
+          earthRadius={7}
+          active={index == idx}
+          onClick={() => setIdx(index)}
+        />
       ))}
     </Canvas>
   );
 };
 
 export default function EarthJournal() {
+  const [idx, setIdx] = useState(0);
+
   return (
     <>
       <h1>Earth Journal</h1>
       <EarthJournalContainer>
-        <GlobeCanvas />
+        <GlobeCanvas setIdx={setIdx} idx={idx} />
+        <Journal journalEntry={journalEntries[idx]} idx={idx} />
       </EarthJournalContainer>
     </>
   );

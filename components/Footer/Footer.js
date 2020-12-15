@@ -1,5 +1,4 @@
 import React from 'react';
-
 const HaveQuestions = () => {
   return (
     <div>
@@ -14,22 +13,17 @@ const HaveQuestions = () => {
   );
 };
 
-const GithubStats = () => {
-  return <div>Sup</div>;
-};
-
-export default function Projects() {
+export default function Footer() {
+  let date = new Date().getFullYear();
   return (
     <>
-      <div>
-        <h2>Projects</h2>
-        <ul>
-          <li>Github Project 1</li>
-          <li>Github Project 2</li>
-          <li>Github Project 3</li>
-        </ul>
-      </div>
       <HaveQuestions />
+      <div>Get In Contact</div>
+      <hr></hr>
+      <div>
+        <div>People Who have visited: 1000: JoshCam</div>
+        <p>CopyWrite {date}</p>
+      </div>
     </>
   );
 }

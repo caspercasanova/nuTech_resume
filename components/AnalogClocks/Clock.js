@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
+import useTime from '../../hooks/useTime';
 import styled from 'styled-components';
-import useTime from '../hooks/useTime';
 
 const Svg = styled.svg`
-  max-width: 70px;
+  max-width: 50px;
   display: block;
   margin: 0 auto;
 `;
 
 const Frame = styled.circle`
-  stroke: cyan;
+  stroke: rgb(183, 183, 183);
   fill: transparent;
   stroke-width: 10;
 `;
 const Minute = styled.g`
-  stroke: cyan;
+  stroke: rgb(183, 183, 183);
 `;
 const Hour = styled.g`
-  stroke: cyan;
+  stroke: rgb(183, 183, 183);
 `;
 
-const Clock = ({ timezone }) => {
+export default function Clock({ timezone }) {
   const { hours, minutes, seconds } = useTime();
 
   return (
@@ -36,24 +36,5 @@ const Clock = ({ timezone }) => {
         </Minute>
       </g>
     </Svg>
-  );
-};
-
-export default function AnalogClocks() {
-  return (
-    <div>
-      <div>
-        <h6>LAX</h6>
-        <Clock timezone={'America/Los_Angeles'} />
-      </div>
-      <div>
-        <h6>LON</h6>
-        <Clock timezone={'Europe/London'} />
-      </div>
-      <div>
-        <h6>TYO</h6>
-        <Clock timezone={'Asia/Tokyo'} />
-      </div>
-    </div>
   );
 }

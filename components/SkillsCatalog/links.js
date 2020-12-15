@@ -1,4 +1,6 @@
-let links = [
+// TODO: Convert to SVG because its sicker
+
+const links = [
   {
     href: 'https://elixir-lang.org',
     alt: 'elixir',
@@ -155,3 +157,5 @@ let links = [
     alt: 'blender',
   },
 ];
+
+export default links;
