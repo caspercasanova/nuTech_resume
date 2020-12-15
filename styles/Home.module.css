@@ -1,17 +1,18 @@
 .container {
-  padding: 0 0.5rem;
+  padding-left: 32px;
+  padding-right: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1440px;
+  max-width: 1100px;
   margin: 0px auto;
 }
 .globe_canvas {
   max-height: 550px;
   max-width: 550px;
   border-radius: 10px;
-  border: 1px solid #2d4298;
-  /* background-color: #111216; */
+
+  /* background-color: ; */
   background: transparent;
 }
 

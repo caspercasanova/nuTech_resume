@@ -7,6 +7,8 @@ import React, { useState, useRef } from 'react';
 import { Html } from 'drei';
 import * as THREE from 'three';
 import styled from 'styled-components';
+import { useLoader } from 'react-three-fiber';
+import Image from 'next/image';
 
 export default function Marker({
   active = false,
@@ -14,6 +16,7 @@ export default function Marker({
   journalEntry,
   earthRadius,
 }) {
+  const map = useLoader(THREE.TextureLoader, './marker.png');
   const { coords, location, date, text } = journalEntry;
 
   const [latitude, longitude] = coords;
@@ -21,15 +24,14 @@ export default function Marker({
   let latRadius = latitude * (Math.PI / 180);
   let lonRadius = -longitude * (Math.PI / 180);
 
-  let x = Math.cos(latRadius) * Math.cos(lonRadius) * (earthRadius + 0.01);
-  let y = Math.sin(latRadius) * (earthRadius + 0.01);
-  let z = Math.cos(latRadius) * Math.sin(lonRadius) * (earthRadius + 0.01);
+  let x = Math.cos(latRadius) * Math.cos(lonRadius) * (earthRadius + 0.5);
+  let y = Math.sin(latRadius) * (earthRadius + 0.5);
+  let z = Math.cos(latRadius) * Math.sin(lonRadius) * (earthRadius + 0.5);
   let rotation = [0.0, -lonRadius, (latRadius - Math.PI) * 0.5];
 
   return (
-    <mesh onClick={onClick} position={[x, y, z]} rotation={rotation}>
-      <ringBufferGeometry args={[0.2, 0.4, 1, 1, 0]} />
-      <meshBasicMaterial attach="material" side={THREE.DoubleSide} />
+    <sprite onClick={onClick} position={[x, y, z]} rotation={rotation}>
+      <spriteMaterial attach="material" map={map} />
       {active && (
         <Html>
           <MarkerContainer>
@@ -45,7 +47,7 @@ export default function Marker({
           </MarkerContainer>
         </Html>
       )}
-    </mesh>
+    </sprite>
   );
 }
 
@@ -54,7 +56,7 @@ const MarkerContainer = styled.div`
   flex-direction: column;
   transform: translate3d(30%, 0, 0);
   text-align: left;
-  scale: (0.5);
+  font-size: 10px;
   border-radius: 4px;
   padding: 6px 9px;
   border: 2px solid rgb(183, 183, 183);
@@ -63,5 +65,13 @@ const MarkerContainer = styled.div`
   background: black;
   & hr {
     width: 100%;
+  }
+  & .content_header {
+    font-size: 10px;
+  }
+  & p {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
   }
 `;

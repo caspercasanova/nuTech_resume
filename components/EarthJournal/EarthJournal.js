@@ -18,20 +18,22 @@ const EarthJournalContainer = styled.div`
 const GlobeCanvas = ({ idx, setIdx }) => {
   return (
     <Canvas className={styles.globe_canvas} camera={{ position: [0, 0, 25] }}>
-      <OrbitControls maxDistance={25} minDistance={10} />
+      <OrbitControls maxDistance={18} minDistance={15} />
       <ambientLight intensity={1} />
       <Suspense fallback={<>...Loading</>}>
         <Globe idx={idx} setIdx={setIdx} />
       </Suspense>
-      {journalEntries.map((journalEntry, index) => (
-        <Marker
-          key={index}
-          journalEntry={journalEntry}
-          earthRadius={7}
-          active={index == idx}
-          onClick={() => setIdx(index)}
-        />
-      ))}
+      <Suspense fallback={<>...Loading</>}>
+        {journalEntries.map((journalEntry, index) => (
+          <Marker
+            key={index}
+            journalEntry={journalEntry}
+            earthRadius={7}
+            active={index == idx}
+            onClick={() => setIdx(index)}
+          />
+        ))}
+      </Suspense>
     </Canvas>
   );
 };

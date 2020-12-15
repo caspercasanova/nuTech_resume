@@ -20,7 +20,7 @@ const projectInfos = [
     bulletPoints: [
       'Globe Three JS application Capable of rendering points based on coordinates',
       'Modular Codebase, capable of being used in other projects',
-      'Still will never give a shit about stupid things that regards peoples',
+      'Renders awesome alien sighting data',
     ],
     technologies: ['Next', 'Jest', 'ThreeJs'],
     githubLink: 'github.com',
@@ -30,6 +30,7 @@ const projectInfos = [
     about: 'Project Z',
     date: '2020-15-10',
     bulletPoints: [
+      'Flat Earth Simulator',
       'Application that renders weather data based upon where a user clicks',
       'Somethign Sick',
       'Still will never give a shit about stupid things that regards peoples',

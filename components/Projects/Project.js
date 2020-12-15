@@ -6,7 +6,7 @@ const ProjectHeader = styled.div`
   align-items: bottom;
   justify-content: space-between;
 `;
-const ProjectBody = styled.ul`
+const BulletPointContainer = styled.ul`
   display: block;
 `;
 
@@ -18,25 +18,43 @@ const ProjectContainer = styled.div`
   margin-bottom: 10px;
 `;
 
+const Technologies = styled.div`
+  display: flex;
+`;
+
 export default function Project({ info }) {
-  const { about, date, bulletPoints, githubLink, schematics } = info;
+  const {
+    about,
+    date,
+    bulletPoints,
+    githubLink,
+    technologies,
+    schematics,
+  } = info;
 
   return (
     <ProjectContainer>
       <ProjectHeader>
         <div>
-          <h4>Name: {about}</h4>
-          <h5>Created: {date}</h5>
+          <h4>{about}</h4>
+          <h5>{date}</h5>
         </div>
         <div>
           <a href={`${githubLink}`}>{githubLink}</a>
         </div>
       </ProjectHeader>
-      <ProjectBody>
+      <Technologies>
+        Technologies
+        {technologies.map((tech, index) => (
+          <span key={tech + index}>{tech}</span>
+        ))}
+      </Technologies>
+
+      <BulletPointContainer>
         {bulletPoints.map((bulletPoint, index) => (
           <li key={bulletPoint + index}>{bulletPoint}</li>
         ))}
-      </ProjectBody>
+      </BulletPointContainer>
     </ProjectContainer>
   );
 }

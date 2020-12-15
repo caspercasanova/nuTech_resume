@@ -1,16 +1,35 @@
 import React from 'react';
 import TypedMessage from './TypedMessage';
 import styled from 'styled-components';
+
+const SidebarContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const HeroLander = styled.div`
+  background-color: #111216;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  & h1 {
+    font-size: 40px;
+  }
+`;
+
 export default function Header() {
   return (
     <div>
-      <div>
-        <div>
-          <TypedMessage message={'Im Nicholas'} />
-        </div>
+      <HeroLander>
         <div>
           <div>SOFTWARE ENGINEER</div>
-          Current Residence: Los Angeles (Open to Relocate)
+          <div>
+            <h1>
+              <TypedMessage message={'Nicholas Lopez'} />
+            </h1>
+          </div>
+          <div>Los Angeles (Open to Relocate)</div>
           <a href={'https://www.linkedin.com/in/310-nicholas-lopez/'}>
             <img
               align="center"
@@ -19,21 +38,23 @@ export default function Header() {
               height="30"
               width="40"
             />
+            LinkedIn
           </a>
           <a href={'https://github.com/caspercasanova'}>Github</a>
           <CopyToClipboard text={'nhjlopez@gmail.com'}>
             <p>nhjlopez@gmail.com</p>
           </CopyToClipboard>
+          <button>Get In Contact</button>
         </div>
-      </div>
+      </HeroLander>
 
       <div>
         <p>
           <i>
-            My personal engineering philosophy resides within the belief that
+            " My personal engineering philosophy resides within the belief that
             the best software manifests when engineers repackage developers’
             tools and technologies so walks of all life are empowered through
-            their use.
+            their use. "
           </i>
         </p>
       </div>

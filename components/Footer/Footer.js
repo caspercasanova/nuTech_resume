@@ -1,4 +1,6 @@
 import React from 'react';
+import styled from 'styled-components';
+// https://dribbble.com/shots/4381174-Sci-fi-Dark-Landing-Page-Technology
 const HaveQuestions = () => {
   return (
     <div>
@@ -9,6 +11,14 @@ const HaveQuestions = () => {
         <li>Do You Work For Free?</li>
         <li>Can we chill together?</li>
       </ul>
+    </div>
+  );
+};
+
+const LetsWorkTogether = () => {
+  return (
+    <div>
+      <div>Imagine Our Potential</div>
     </div>
   );
 };
