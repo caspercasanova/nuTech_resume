@@ -30,6 +30,7 @@ export default function Footer() {
       <HaveQuestions />
       <div>Get In Contact</div>
       <hr></hr>
+      SourceCode
       <div>
         <div>People Who have visited: 1000: JoshCam</div>
         <p>CopyWrite {date}</p>

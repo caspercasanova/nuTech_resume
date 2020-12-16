@@ -28,7 +28,8 @@ const journalEntries = [
     date: '4-27-2012',
     location: 'Abu Simbel',
     coords: [22.335498658, 31.621997512],
-    text: 'A collection of papyrus scrolls, Vases of clay and a Metorite. ',
+    text:
+      'A collection of papyrus scrolls, Vases of clay and a Metorite. ',
     image: '',
   },
   {

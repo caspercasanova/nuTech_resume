@@ -9,17 +9,18 @@ import AnalogClocks from '../components/AnalogClocks/AnalogClocks';
 import SkillsCatalog from '../components/SkillsCatalog/SkillsCatalog';
 import Tickerbar from '../components/Tickerbar';
 import Timer from '../components/Timer';
-
+import Navbar from '../components/Navbar';
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Navbar />
       <Header />
       <EarthJournal />
-      <SkillsCatalog />
-      <Tickerbar />
-      <Education />
       <Projects />
+      <Education />
+      <SkillsCatalog />
       <Footer />
+      <Tickerbar />
       <Timer />
       <AnalogClocks />
     </div>

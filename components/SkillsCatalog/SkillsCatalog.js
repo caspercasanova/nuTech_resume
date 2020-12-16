@@ -13,7 +13,7 @@ const SkillsContainer = styled.div`
 export default function SkillsCatalog() {
   return (
     <div>
-      <h2>Skills I have</h2>
+      <h2>THINGS I like and Am Interested In</h2>
       <div>
         <p>FrontEnd</p>
         <p>DevOps</p>
