@@ -1,4 +1,4 @@
-const Pictures = [
+const PicturesData = [
   {
     created: 2018,
     title: 'untitledFace001',
@@ -41,4 +41,4 @@ const Pictures = [
   },
 ];
 
-export default Pictures;
+export default PicturesData;
