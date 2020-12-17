@@ -8,23 +8,25 @@ const ButtonContainer = styled.div`
   display: flex;
   background-color: #111216;
   align-items: center;
+  justify-content: center;
+  & a {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
 `;
 
 export default function ReachMe() {
   return (
-    <div>
-      <h4>Reach Out To Me</h4>
-      <ButtonContainer>
-        <a href="https://www.linkedin.com/in/310-nicholas-lopez/">
-          <LinkedIn />
-        </a>
-        <a href={'https://github.com/caspercasanova'}>
-          <Github />
-        </a>
-        <a href="nhjlopez@gmail.com">
-          <Mail />
-        </a>
-      </ButtonContainer>
-    </div>
+    <ButtonContainer>
+      <a href="https://www.linkedin.com/in/310-nicholas-lopez/">
+        <LinkedIn />
+      </a>
+      <a href={'https://github.com/caspercasanova'}>
+        <Github />
+      </a>
+      <a href="nhjlopez@gmail.com">
+        <Mail />
+      </a>
+    </ButtonContainer>
   );
 }

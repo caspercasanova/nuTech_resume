@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import journalEntries from './journalEntries';
+import JournalEntries from './JournalEntries';
 import { Canvas } from 'react-three-fiber';
 import { OrbitControls } from 'drei';
 import styles from '../../styles/Home.module.css';
@@ -17,7 +17,7 @@ export default function GlobeCanvas({ idx, setIdx }) {
         <Globe idx={idx} setIdx={setIdx} />
       </Suspense>
       <Suspense fallback={<>...Loading</>}>
-        {journalEntries.map((journalEntry, index) => (
+        {JournalEntries.map((journalEntry, index) => (
           <Marker
             key={index}
             journalEntry={journalEntry}

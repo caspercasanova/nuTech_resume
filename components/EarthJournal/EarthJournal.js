@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import Journal from './Journal';
 import ReachMe from '../ReachMe';
 import GlobeCanvas from './GlobeCanvas';
-import journalEntries from './journalEntries';
+import JournalEntries from './JournalEntries';
 import styled from 'styled-components';
 
-const HeroLander = styled.div`
+const Me = styled.div`
   background-color: #111216;
   border-radius: 4px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 10px;
   & h1 {
     font-size: 40px;
@@ -40,15 +42,15 @@ export default function EarthJournal() {
     <EarthJournalContainer>
       <GlobeCanvas setIdx={setIdx} idx={idx} />
       <SideBar>
-        <HeroLander>
+        <Me>
           <div>
             <div>SOFTWARE ENGINEER / ADVENTURER</div>
             <h1>Nicholas Lopez</h1>
             <ReachMe />
           </div>
-        </HeroLander>
+        </Me>
         <Journal
-          journalEntry={journalEntries[idx]}
+          journalEntry={JournalEntries[idx]}
           idx={idx}
         />
       </SideBar>

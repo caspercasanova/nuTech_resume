@@ -21,7 +21,7 @@ export default function LinkedIn() {
         fill="rgb(66, 149, 128)"
         enableBackground="accumulate"
         overflow="visible"
-        transform="translate(0 -952.362)"></path>
+        transform="translate(-10 -942.362)"></path>
     </SVG>
   );
 }

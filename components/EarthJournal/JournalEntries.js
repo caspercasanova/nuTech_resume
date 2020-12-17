@@ -1,4 +1,4 @@
-const journalEntries = [
+const JournalEntries = [
   {
     date: Date.now(),
     location: 'Los Angeles',
@@ -90,4 +90,4 @@ const journalEntries = [
   },
 ];
 
-export default journalEntries;
+export default JournalEntries;

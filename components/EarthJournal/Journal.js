@@ -9,8 +9,8 @@ const JournalContainer = styled.div`
   overflow-y: scroll;
 `;
 
-export default function Journal({ journalEntry }) {
-  const { location, text } = journalEntry;
+export default function Journal({ JournalEntries }) {
+  const { location, text } = JournalEntries;
   return (
     <JournalContainer>
       <div>Entry ID: {Math.random().toFixed(3)}</div>
