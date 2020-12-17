@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import pictures from './pictures';
-import GlowCorner from '../GlowCorner';
+import Pictures from './Pictures';
+
 const GridContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +11,7 @@ const GridContainer = styled.div`
 export default function PictureGrid() {
   return (
     <GridContainer>
-      {pictures.map((pic, index) => (
+      {Pictures.map((pic, index) => (
         <Picture
           src={pic.src}
           key={pic.title}

@@ -1,13 +1,4 @@
-import img2face from '../../public/images/arts/2face.png';
-import imgLA from '../../public/images/arts/la.png';
-import imgMultipass from '../../public/images/arts/multipass.png';
-import imgNewSonus from '../../public/images/arts/newSonus.png';
-import imgPipeDreamz from '../../public/images/arts/pipeDreamz.png';
-import imgUntitledFace003 from '../../public/images/arts/UntitledFace003.png';
-import imgUntitledFace002 from '../../public/images/arts/UntitledFace002.png';
-import imgUntitledFace001 from '../../public/images/arts/UntitledFace001.png';
-
-const pictures = [
+const Pictures = [
   {
     created: 2018,
     title: 'untitledFace001',
@@ -50,4 +41,4 @@ const pictures = [
   },
 ];
 
-export default pictures;
+export default Pictures;
