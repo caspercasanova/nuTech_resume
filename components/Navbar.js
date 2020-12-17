@@ -42,8 +42,6 @@ const Navbutton = styled.div`
 
 const pages = ['art', 'about'];
 export default function Navbar() {
-  const router = useRouter();
-
   return (
     <NavContainer>
       <Navbutton>
@@ -52,10 +50,8 @@ export default function Navbar() {
 
       <Sidebar>
         {pages.map((link, i) => (
-          <Navbutton>
-            <Link key={link + i} href={`/${link}`}>
-              {link}
-            </Link>
+          <Navbutton key={i}>
+            <Link href={`/${link}`}>{link}</Link>
           </Navbutton>
         ))}
       </Sidebar>

@@ -1,18 +1,6 @@
 import React from 'react';
-import TypedMessage from './TypedMessage';
 import styled from 'styled-components';
-import ReachMe from './ReachMe';
 
-const HeroLander = styled.div`
-  background-color: #111216;
-  border-radius: 4px;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  & h1 {
-    font-size: 40px;
-  }
-`;
 const HeaderContainer = styled.div`
   display: flex;
   width: 100%;

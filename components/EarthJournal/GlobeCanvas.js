@@ -1,6 +1,6 @@
-import React, { useState, Suspense, useRef } from 'react';
+import React, { Suspense } from 'react';
 import journalEntries from './journalEntries';
-import { Canvas, useFrame } from 'react-three-fiber';
+import { Canvas } from 'react-three-fiber';
 import { OrbitControls } from 'drei';
 import styles from '../../styles/Home.module.css';
 import Marker from './Marker';

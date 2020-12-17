@@ -1,9 +1,9 @@
-import styled from 'styled-components';
 import React, { useState } from 'react';
 import Journal from './Journal';
-import journalEntries from './journalEntries';
 import ReachMe from '../ReachMe';
 import GlobeCanvas from './GlobeCanvas';
+import journalEntries from './journalEntries';
+import styled from 'styled-components';
 
 const HeroLander = styled.div`
   background-color: #111216;

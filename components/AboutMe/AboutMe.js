@@ -1,7 +1,7 @@
 import React from 'react';
-import AnalogClocks from '../components/AnalogClocks/AnalogClocks';
-import Tickerbar from '../components/Tickerbar';
-import Timer from '../components/Timer';
+import AnalogClocks from '../AnalogClocks/AnalogClocks';
+import Tickerbar from '../Tickerbar';
+import Timer from '../Timer';
 
 export default function AboutMe() {
   return (
