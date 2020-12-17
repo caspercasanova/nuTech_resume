@@ -1,54 +1,52 @@
-import Image from 'next/image';
-
-import img2face from './2face.png';
-import imgLA from './la.png';
-import imgMultipass from './multipass.png';
-import imgNewSonus from './newSonus.png';
-import imgPipeDreamz from './pipeDreamz.png';
-import imgUntitledFace003 from './UntitledFace003.png';
-import imgUntitledFace002 from './UntitledFace002.png';
-import imgUntitledFace001 from './UntitledFace001.png';
+import img2face from './arts/2face.png';
+import imgLA from './arts/la.png';
+import imgMultipass from './arts/multipass.png';
+import imgNewSonus from './arts/newSonus.png';
+import imgPipeDreamz from './arts/pipeDreamz.png';
+import imgUntitledFace003 from './arts/UntitledFace003.png';
+import imgUntitledFace002 from './arts/UntitledFace002.png';
+import imgUntitledFace001 from './arts/UntitledFace001.png';
 
 const pictures = [
   {
     created: 2018,
     title: 'untitledFace001',
-    img: imgUntitledFace001,
+    src: imgUntitledFace001,
   },
   {
     created: 2018,
     title: 'untitledFace002',
-    img: imgUntitledFace002,
+    src: imgUntitledFace002,
   },
   {
     created: 2018,
     title: 'untitledFace003',
-    img: imgUntitledFace003,
+    src: imgUntitledFace003,
   },
   {
     created: 2020,
     title: 'PipeDreamz',
-    img: imgPipeDreamz,
+    src: imgPipeDreamz,
   },
   {
     created: 2018,
     title: 'New Sonus',
-    img: imgNewSonus,
+    src: imgNewSonus,
   },
   {
     created: 2019,
     title: 'Multipass',
-    img: imgMultipass,
+    src: imgMultipass,
   },
   {
     created: 2019,
     title: 'LA',
-    img: imgLA,
+    src: imgLA,
   },
   {
     created: 2019,
     title: '2',
-    img: img2face,
+    src: img2face,
   },
 ];
 

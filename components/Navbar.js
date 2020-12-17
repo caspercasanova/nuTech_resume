@@ -1,22 +1,64 @@
 import React from 'react';
-import Link from '../Link';
+import Link from './Link';
 import { useRouter } from 'next/router';
+import styled from 'styled-components';
 
-const links = ['art', 'home'];
+const NavContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+`;
+const Sidebar = styled.div`
+  display: flex;
+`;
+
+const Navbutton = styled.div`
+  border: none;
+  background: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-variant-caps: small-caps;
+  transform: scale(1);
+  transition: transform 0.1s ease-in;
+  transform: scale(1.2);
+  margin-left: 10px;
+  margin-right: 10px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  &:hover {
+    background: #111216;
+    color: rgb(66, 149, 128);
+  }
+  & .active {
+    border-bottom: 2px solid cyan;
+    color: rgb(66, 149, 128);
+  }
+`;
+
+const pages = ['art', 'about'];
 export default function Navbar() {
   const router = useRouter();
 
   return (
-    <header>
-      <div>
+    <NavContainer>
+      <Navbutton>
         <Link href="/">Nicholas Lopez</Link>
+      </Navbutton>
 
+      <Sidebar>
         {pages.map((link, i) => (
-          <Link key={link + i} href={`/${link}`}>
-            {link}
-          </Link>
+          <Navbutton>
+            <Link key={link + i} href={`/${link}`}>
+              {link}
+            </Link>
+          </Navbutton>
         ))}
-      </div>
-    </header>
+      </Sidebar>
+    </NavContainer>
   );
 }

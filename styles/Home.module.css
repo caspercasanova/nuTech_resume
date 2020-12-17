@@ -7,11 +7,11 @@
   max-width: 1100px;
   margin: 0px auto;
 }
-.globe_canvas {
-  max-height: 550px;
-  max-width: 550px;
-  border-radius: 10px;
 
+.globe_canvas {
+  width: 550px;
+  height: 550px;
+  border-radius: 10px;
   /* background-color: ; */
   background: transparent;
 }

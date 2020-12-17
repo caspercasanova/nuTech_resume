@@ -5,24 +5,22 @@ import EarthJournal from '../components/EarthJournal/EarthJournal';
 import Education from '../components/Education';
 import Projects from '../components/Projects/Projects';
 import Footer from '../components/Footer/Footer';
-import AnalogClocks from '../components/AnalogClocks/AnalogClocks';
 import SkillsCatalog from '../components/SkillsCatalog/SkillsCatalog';
-import Tickerbar from '../components/Tickerbar';
-import Timer from '../components/Timer';
 import Navbar from '../components/Navbar';
+import GlowCorner from '../components/GlowCorner';
+
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Navbar />
       <Header />
+      <Navbar />
+      <GlowCorner top={true} />
       <EarthJournal />
       <Projects />
       <Education />
       <SkillsCatalog />
+      <GlowCorner bottom={true} />
       <Footer />
-      <Tickerbar />
-      <Timer />
-      <AnalogClocks />
     </div>
   );
 }

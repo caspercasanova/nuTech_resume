@@ -25,11 +25,11 @@ const journalEntries = [
     image: '',
   },
   {
-    date: '4-27-2012',
+    date: 'March 15, 1926',
     location: 'Abu Simbel',
     coords: [22.335498658, 31.621997512],
     text:
-      'A collection of papyrus scrolls, Vases of clay and a Metorite. ',
+      'I met a intesting group of renegades during my travels in Egypt. While I was residing in Hamunaptra, the city of the dead, a number of strange events occurs. Water started turning to blood, Frogs started appearing everywhere, and the local inhabitants started spreading boils and blisters. For three nights there was nothing but darkness, even during midday! I left before the city broke down into a riot. I have not heard back from those bandits I met on the boat.',
     image: '',
   },
   {
@@ -41,61 +41,51 @@ const journalEntries = [
     image: '',
   },
   {
-    date: Date.now(),
+    date: 'June 15 2001',
     location: 'Angkor Wat',
     coords: [13.4075, 103.8667],
-    text: 'Ancient Jasmine Flower',
+    text:
+      'During my travels to in Malaysia I met a Lady Croft, an English tourist, hunting for some kind of ancient relic. Intrigued, I tagged along in her adventure to discover that the relic truly did exist in the Ancient Temples of Angkor Wat. Amazing. Sidenote: The Ancient Jasmine Flower is known to heal wounds and sickness.',
     image: '',
   },
   {
-    date: Date.now(),
+    date: 'January 4 2006',
     location: 'Vatican City',
     coords: [41.904755, 12.454628],
     text:
-      'Was invited to investigate the existance of an ancient blood line. Though my investigations with Father ',
+      'Was invited to investigate the existance of an ancient blood line. Though my investigations with historian Tom Hanks, we were able to derive the origins of the ancient bloodline of Jesus Christ. We made quite a ruckus of the entire investigation as a secret cabal within the Opus Dei prelature stalked us and threated us should we publish any of our findings. ',
     image: '',
   },
   {
-    date: Date.now(),
+    date: 'June 12, 1987',
     location: 'Machu Picchu',
     coords: [-13.157832702 - 72.540664504],
     text:
-      'Whilst navigating through Dense Jungle Crystal Skull. Part-took in a blood letting rituation with the native tribe "The "',
+      'Was tasked by the US military to rescue a group of hostiges in guerrilla-held territory in Central America. I and a group of Heavily trained men encountered a deadly Alien that was vastly superior and technologically to our lightly armed group. We lost good men and women that day. Dutch, our leader, still rings to this day asking how I\'m doing. I always respond with "Better than our time in Columbia".',
     image: '',
   },
   {
     date: 'July 20 1935',
     location: 'Petra',
     coords: [30.32896, 35.444832],
-    text: 'Holy Grail Location',
+    text:
+      'I, along with a Doctor Jones and company, aquired knowledge of an Ancient and forgotten pathway hidden within the Lost City of Petra. Our venture was not without misfortune. A group of renegade Nazi soldiers and their leader were interested in this forgotten pathway. Needless to say I survived. I took a vow of silence to never speak of what happened that day, rest assured the Holy Grail was not involved.',
     image: '',
   },
   {
-    date: Date.now(),
-    location: 'Gobi Desert',
-    coords: [],
-    text: 'Pools of Lazarus',
-    image: '',
-  },
-  {
-    date: Date.now(),
+    date: 'August 27 2004',
     location: 'Borneo',
     coords: [-1.106123, 114.143935],
-    text: 'Blood Orchid',
+    text:
+      'I am no fan of snakes, but when I was asked by an unnamed Pharmacutical company to venture into the depths of Borneo to find what the natives called the "Blood Orchid" I decidede to put my fears behind me. The company paid very well. During my adventure I witnessed snakes, anacondas to be specific, the length of school busses! I kid you not. Lets just say I wont be returning anytime soon.',
     image: '',
   },
   {
-    date: Date.now(),
+    date: 'February 16 2018',
     location: 'Wakanda',
     coords: [3.49538, 36.03797],
-    text: 'Vibranium',
-    image: '',
-  },
-  {
-    date: Date.now(),
-    location: 'Bouvetøya',
-    coords: [3.4, -54.4333],
-    text: 'A spike of radiation was detected',
+    text:
+      'Nestled between Lake Turkana and South Sudan, Wakanda is a marvelous and spawling cityscape of the future. Maglev Trains, Hanging Gardens and structures taller than the Empire State building, Wakanda is a change is perspective when it comes to dreaming of what is possible. I met a man there who was hunting for a rare element named Vibranium. I only saw what was just but a sliver of this mysterious metal. It was heavy, silver and radiated an electric-like feeling. I wish I had kept it.',
     image: '',
   },
 ];
