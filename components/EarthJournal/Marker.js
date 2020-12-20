@@ -8,15 +8,17 @@ import { Html } from 'drei';
 import * as THREE from 'three';
 import styled from 'styled-components';
 import { useLoader } from 'react-three-fiber';
-import Image from 'next/image';
-
+import styles from '../../styles/Home.module.css';
 export default function Marker({
   active = false,
   onClick,
   journalEntry,
   earthRadius,
 }) {
-  const map = useLoader(THREE.TextureLoader, './marker.png');
+  const map = useLoader(
+    THREE.TextureLoader,
+    './marker.png'
+  );
   const { coords, location, date, text } = journalEntry;
 
   const [latitude, longitude] = coords;
@@ -24,13 +26,27 @@ export default function Marker({
   let latRadius = latitude * (Math.PI / 180);
   let lonRadius = -longitude * (Math.PI / 180);
 
-  let x = Math.cos(latRadius) * Math.cos(lonRadius) * (earthRadius + 0.5);
+  let x =
+    Math.cos(latRadius) *
+    Math.cos(lonRadius) *
+    (earthRadius + 0.5);
   let y = Math.sin(latRadius) * (earthRadius + 0.5);
-  let z = Math.cos(latRadius) * Math.sin(lonRadius) * (earthRadius + 0.5);
-  let rotation = [0.0, -lonRadius, (latRadius - Math.PI) * 0.5];
+  let z =
+    Math.cos(latRadius) *
+    Math.sin(lonRadius) *
+    (earthRadius + 0.5);
+  let rotation = [
+    0.0,
+    -lonRadius,
+    (latRadius - Math.PI) * 0.5,
+  ];
 
   return (
-    <sprite onClick={onClick} position={[x, y, z]} rotation={rotation}>
+    <sprite
+      className={styles.sprite}
+      onClick={onClick}
+      position={[x, y, z]}
+      rotation={rotation}>
       <spriteMaterial attach="material" map={map} />
       {active && (
         <Html>

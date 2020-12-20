@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Icon from '../../components/Icon';
 
 const SVG = styled(Icon)`
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 `;
 
 export default function Cap() {

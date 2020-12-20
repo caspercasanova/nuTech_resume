@@ -2,6 +2,17 @@ import React, { useState } from 'react';
 import SkillTile from './SkillTile';
 import links from './links';
 import styled from 'styled-components';
+import Tools from '../../assets/Svgs/Tools';
+
+const SkillsSection = styled.section`
+  width: 100%;
+`;
+const SkillsSectionHeader = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const SkillsSectionBody = styled.div``;
 
 const SkillsContainer = styled.div`
   width: 700px;
@@ -40,14 +51,12 @@ export default function SkillsCatalog() {
   const [hovered, setHovered] = useState('nothing');
 
   return (
-    <div>
-      <h2>Interests and Skills</h2>
-      <div>
-        I am no by no means expert of ALL these domains
-        however I am a forever a student love developing my
-        craft with different tools as often as I can. Here
-        are some that you may recognize.
-      </div>
+    <SkillsSection>
+      <SkillsSectionHeader>
+        <Tools />
+        <h3>Skills And Tooling</h3>
+      </SkillsSectionHeader>
+      <hr />
       <RealmsContainers>
         <SkillsButtons
           classname={`${
@@ -92,6 +101,6 @@ export default function SkillsCatalog() {
           />
         ))}
       </SkillsContainer>
-    </div>
+    </SkillsSection>
   );
 }

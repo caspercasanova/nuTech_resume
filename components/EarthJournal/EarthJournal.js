@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Journal from './Journal';
-import ReachMe from '../ReachMe';
+import Socials from '../Socials';
 import GlobeCanvas from './GlobeCanvas';
 import JournalEntries from './JournalEntries';
 import styled from 'styled-components';
@@ -23,16 +23,16 @@ const EarthJournalContainer = styled.div`
   width: 100%;
   height: 600px;
   /* border: 1px solid #131a22; */
-  background-color: #131a22;
+  // background-color: #131a22;
   overflow: hidden;
   border-radius: 4px;
-  box-shadow: inset 0 -10px 10px -10px #de1dde;
 `;
 
 const SideBar = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
+  margin-left: 10px;
 `;
 
 export default function EarthJournal() {
@@ -46,7 +46,7 @@ export default function EarthJournal() {
           <div>
             <div>SOFTWARE ENGINEER / ADVENTURER</div>
             <h1>Nicholas Lopez</h1>
-            <ReachMe />
+            <Socials />
           </div>
         </Me>
         <Journal

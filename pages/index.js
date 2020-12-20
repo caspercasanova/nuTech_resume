@@ -7,19 +7,17 @@ import Projects from '../components/Projects/Projects';
 import Footer from '../components/Footer/Footer';
 import SkillsCatalog from '../components/SkillsCatalog/SkillsCatalog';
 import Navbar from '../components/Navbar';
-import GlowCorner from '../components/GlowCorner';
 
+// https://samueleresca.net/
 export default function Home() {
   return (
     <div className={styles.container}>
       <Header />
       <Navbar />
-      <GlowCorner top={true} />
       <EarthJournal />
       <Projects />
       <Education />
       <SkillsCatalog />
-      <GlowCorner bottom={true} />
       <Footer />
     </div>
   );

@@ -15,7 +15,7 @@ const ButtonContainer = styled.div`
   }
 `;
 
-export default function ReachMe() {
+export default function Socials() {
   return (
     <ButtonContainer>
       <a href="https://www.linkedin.com/in/310-nicholas-lopez/">

@@ -10,6 +10,11 @@ const NavContainer = styled.div`
   font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid rgb(66, 149, 128);
 `;
 const Sidebar = styled.div`
   display: flex;

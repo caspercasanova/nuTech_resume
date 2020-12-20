@@ -25,7 +25,7 @@ const Corners = styled.div`
   &:before {
     content: '';
     position: absolute;
-    border-color: #abf0f9;
+    border-color: #de1dde;
     border-style: solid;
     width: 15px;
     height: 15px;
@@ -33,7 +33,7 @@ const Corners = styled.div`
   }
   &:after {
     content: '';
-    border-color: #abf0f9;
+    border-color: #de1dde;
     border-style: solid;
     position: absolute;
     width: 15px;
@@ -41,7 +41,6 @@ const Corners = styled.div`
     transition: 0.3s;
   }
 `;
-
 const TopCorners = styled(Corners)`
   top: 0px;
   &:before {

@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from './Project';
-
+import ProjectSvg from '../../assets/Svgs/ProjectSvg';
+import styled from 'styled-components';
 const projectInfos = [
   {
     about: 'Project X',
@@ -10,7 +11,13 @@ const projectInfos = [
       'Social Media functionality. Add/Remove Friends. Block Users. Create Groups and Join Parties in a group',
       'Test Driven Development complete with seeding script',
     ],
-    technologies: ['Node', 'MongoDB', 'React', 'Jest', 'ThreeJs'],
+    technologies: [
+      'Node',
+      'MongoDB',
+      'React',
+      'Jest',
+      'ThreeJs',
+    ],
     githubLink: 'github.com',
     schematics: [],
   },
@@ -41,18 +48,28 @@ const projectInfos = [
   },
 ];
 
+const ProjectsSection = styled.section`
+  width: 100%;
+`;
+
+const ProjectsHeader = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export default function Projects() {
   return (
-    <>
+    <ProjectsSection>
+      <ProjectsHeader>
+        <ProjectSvg />
+        <h3>Projects</h3>
+      </ProjectsHeader>
+      <hr />
       <div>
-        <h2>Projects</h2>
-        <hr />
-        <div>
-          {projectInfos.map((project, index) => (
-            <Project info={project} key={project + index} />
-          ))}
-        </div>
+        {projectInfos.map((project, index) => (
+          <Project info={project} key={project + index} />
+        ))}
       </div>
-    </>
+    </ProjectsSection>
   );
 }

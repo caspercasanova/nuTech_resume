@@ -9,9 +9,12 @@ export default function Art() {
     <div className={styles.container}>
       <Navbar />
       <div>
-        This is some art of mine. I like gradients and have
-        been into the vaporwave scene for some years. I have
-        many more Arts, ask me about them.{' '}
+        This is some art of mine. All have been made using
+        Photoshop. I like gradients and have been into the
+        vaporwave scene for some years and want to explore
+        more animated Artforms and as well as Screen and
+        Direct-to-Garment print. I have many more Arts, ask
+        me about them.{' '}
       </div>
       <PictureGrid />
     </div>
