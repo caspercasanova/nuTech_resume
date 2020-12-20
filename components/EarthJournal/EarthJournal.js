@@ -47,6 +47,13 @@ export default function EarthJournal() {
             <div>SOFTWARE ENGINEER / ADVENTURER</div>
             <h1>Nicholas Lopez</h1>
             <Socials />
+            <i>
+              "I hold true to an Engineering Principle in
+              where the best software manifests when
+              developers’ tools and technologies are
+              Democratized so walks of all life are
+              empowered by their use. "
+            </i>
           </div>
         </Me>
         <Journal

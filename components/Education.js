@@ -14,6 +14,7 @@ const EducationSectionHeader = styled.div`
 `;
 const EducationSectionBody = styled.div`
   display: flex;
+  justify-content: space-around;
 `;
 
 const ImageButton = styled.div`

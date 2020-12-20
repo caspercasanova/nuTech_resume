@@ -1,6 +1,5 @@
 // import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Header from '../components/Header';
 import EarthJournal from '../components/EarthJournal/EarthJournal';
 import Education from '../components/Education';
 import Projects from '../components/Projects/Projects';
@@ -12,7 +11,6 @@ import BlogPosts from '../components/BlogPosts/BlogPosts';
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Header />
       <Navbar />
       <EarthJournal />
       <Projects />

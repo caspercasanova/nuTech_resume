@@ -35,7 +35,6 @@ export default function BlogPosts() {
         <h3>Blog Posts</h3>
       </BlogPostHeader>
       <hr />
-
       <BlogPostBody>
         <BlogList>
           <li>

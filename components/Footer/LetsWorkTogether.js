@@ -5,8 +5,9 @@ import NetworkSVG from '../../assets/Svgs/NetworkSVG';
 
 const LetsWorkTogetherCard = styled.div`
   border: 1px solid cyan;
-  padding: 8px 14px;
+  padding: 10px 14px;
   border-radius: 4px;
+  max-width: 50ch;
 `;
 
 const LetsWorkHeader = styled.div`

@@ -2,10 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import LetsWorkTogether from './LetsWorkTogether';
 import AnalogClocks from '../AnalogClocks/AnalogClocks';
-// https://dribbble.com/shots/4381174-Sci-fi-Dark-Landing-Page-Technology
+import CheckOutMyArt from './CheckOutMyArt';
 
 const FooterSection = styled.section`
   width: 100%;
+  margin-top: 10px;
 `;
 
 const SideFooter = () => {
@@ -36,7 +37,7 @@ export default function Footer() {
     <FooterSection>
       <FooterBody>
         <LetsWorkTogether />
-        <SideFooter />
+        <CheckOutMyArt />
       </FooterBody>
       <hr></hr>
       <h6>

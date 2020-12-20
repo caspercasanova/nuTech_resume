@@ -8,6 +8,9 @@ I Like [To] Code.
 
 
 This Is A Subtle ToDos MD.
+[]: Header
+[]: Art Link
+
 ## TODOS Functionality
 []: Landing Section
 []: Globe Location
@@ -30,3 +33,4 @@ This Is A Subtle ToDos MD.
 
 ## Inspirations and References
 https://samueleresca.net/
+https://dribbble.com/shots/4381174-Sci-fi-Dark-Landing-Page-Technology
