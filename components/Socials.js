@@ -6,7 +6,6 @@ import styled from 'styled-components';
 
 const ButtonContainer = styled.div`
   display: flex;
-  background-color: #111216;
   align-items: center;
   justify-content: center;
   & a {

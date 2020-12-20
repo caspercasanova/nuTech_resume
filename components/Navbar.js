@@ -45,7 +45,7 @@ const Navbutton = styled.div`
   }
 `;
 
-const pages = ['art', 'about'];
+const pages = ['art'];
 export default function Navbar() {
   return (
     <NavContainer>

@@ -7,8 +7,8 @@ import Projects from '../components/Projects/Projects';
 import Footer from '../components/Footer/Footer';
 import SkillsCatalog from '../components/SkillsCatalog/SkillsCatalog';
 import Navbar from '../components/Navbar';
+import BlogPosts from '../components/BlogPosts/BlogPosts';
 
-// https://samueleresca.net/
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -18,6 +18,7 @@ export default function Home() {
       <Projects />
       <Education />
       <SkillsCatalog />
+      <BlogPosts />
       <Footer />
     </div>
   );

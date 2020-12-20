@@ -1,22 +1,55 @@
 import React from 'react';
 import styled from 'styled-components';
-import Socials from '../Socials';
-
+import LetsWorkTogether from './LetsWorkTogether';
+import AnalogClocks from '../AnalogClocks/AnalogClocks';
 // https://dribbble.com/shots/4381174-Sci-fi-Dark-Landing-Page-Technology
+
+const FooterSection = styled.section`
+  width: 100%;
+`;
+
+const SideFooter = () => {
+  return (
+    <div>
+      <AnalogClocks />
+      <div>People Who have visited: 1000: JoshCam</div>
+    </div>
+  );
+};
+const FooterBody = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`;
+
+const BrainLogo = styled.div`
+  width: 60px;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+`;
 
 export default function Footer() {
   let date = new Date().getFullYear();
   return (
-    <>
+    <FooterSection>
+      <FooterBody>
+        <LetsWorkTogether />
+        <SideFooter />
+      </FooterBody>
       <hr></hr>
-      <h3>Lets Work Together!</h3>
-      <div>Reach Out</div>
-      <Socials />
-      SourceCode
-      <div>
-        <div>People Who have visited: 1000: JoshCam</div>
-        <p>CopyWrite {date}</p>
-      </div>
-    </>
+      <h6>
+        View SourceCode{' '}
+        <a href="https://github.com/caspercasanova/nuTech_resume" />
+      </h6>
+      <h6>Copyright © NSA 1994-{date}</h6>
+      <BrainLogo>
+        <img
+          src={'/images/arts/NSAbrainDagger.png'}
+          alt={'brainDagger'}
+        />
+      </BrainLogo>
+    </FooterSection>
   );
 }

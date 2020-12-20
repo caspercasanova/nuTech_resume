@@ -1,5 +1,5 @@
 import React from 'react';
-import AnalogClocks from '../AnalogClocks/AnalogClocks';
+
 import Tickerbar from '../Tickerbar';
 import Timer from '../Timer';
 
@@ -14,7 +14,6 @@ export default function AboutMe() {
       </div>
       <Tickerbar />
       <Timer />
-      <AnalogClocks />
     </div>
   );
 }
