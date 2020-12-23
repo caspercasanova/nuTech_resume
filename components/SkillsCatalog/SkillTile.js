@@ -21,6 +21,7 @@ const TileContainer = styled.div`
     border-color: rgba(36, 54, 78, 0.5);
     transform: scale(1.2);
     cursor: pointer;
+    color: #426ba7;
   }
 `;
 

@@ -37,13 +37,13 @@ export default function Footer() {
     <FooterSection>
       <FooterBody>
         <LetsWorkTogether />
+        <hr />
         <CheckOutMyArt />
       </FooterBody>
       <hr></hr>
-      <h6>
-        View SourceCode{' '}
-        <a href="https://github.com/caspercasanova/nuTech_resume" />
-      </h6>
+      <a href="https://github.com/caspercasanova/nuTech_resume">
+        <h6>View SourceCode</h6>
+      </a>
       <h6>Copyright © NSA 1994-{date}</h6>
       <BrainLogo>
         <img

@@ -4,7 +4,6 @@ import Github from '../../assets/Svgs/Github';
 
 const ProjectContainer = styled.div`
   padding: 6px 9px;
-
   border-radius: 4px;
   border: 1px solid rgb(66, 149, 128);
   margin: 10px;
@@ -17,17 +16,17 @@ const ProjectContainer = styled.div`
 const GithubIcon = styled(Github)`
   width: 35px;
   height: 35px;
-
-  &:hover {
-    fill: purple;
-  }
 `;
 
 const ProjectHeader = styled.div`
   display: flex;
-  flex-direction: column;
-  & h5,
-  h6 {
+  justify-content: space-between;
+
+  & h5 {
+    font-size: 18px;
+    margin: 0;
+  }
+  & h6 {
     margin: 0;
   }
 `;
@@ -37,12 +36,14 @@ const BulletPointContainer = styled.ul`
 
 const Technologies = styled.div`
   display: flex;
+  color: #426ba7;
 `;
 
 const ProjectBody = styled.div`
   display: flex;
   flex-direction: column;
 `;
+const BulletPoint = styled.li``;
 
 export default function Project({ info }) {
   const {
@@ -57,8 +58,10 @@ export default function Project({ info }) {
   return (
     <ProjectContainer>
       <ProjectHeader>
-        <h5>{about}</h5>
-        <h6>{date}</h6>
+        <div>
+          <h5>{about}</h5>
+          <h6>{date}</h6>
+        </div>
         <a href={`${githubLink}`}>
           <GithubIcon />
         </a>
@@ -66,7 +69,9 @@ export default function Project({ info }) {
       <ProjectBody>
         <BulletPointContainer>
           {bulletPoints.map((bulletPoint, index) => (
-            <li key={bulletPoint + index}>{bulletPoint}</li>
+            <BulletPoint key={bulletPoint + index}>
+              {bulletPoint}
+            </BulletPoint>
           ))}
         </BulletPointContainer>
         <Technologies>

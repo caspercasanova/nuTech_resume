@@ -21,8 +21,12 @@ const BlogList = styled.ul`
   color: rgb(66, 149, 128);
 
   & a {
+    font-size: 14px;
+    transition: transform 0.1s ease-in;
     &:hover {
       cursor: pointer;
+      color: #426ba7;
+      text-decoration: underline;
     }
   }
 `;

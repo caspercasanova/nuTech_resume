@@ -24,7 +24,11 @@ h3 {
   /* margin: 30px 0px 10px; */
 }
 p {
-  font-size: 19px;
+  font-size: 12px;
+}
+
+h6 {
+  font-size: 12px;
 }
 button {
   appearance: none;

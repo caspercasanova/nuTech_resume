@@ -1,12 +1,19 @@
 // import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import EarthJournal from '../components/EarthJournal/EarthJournal';
-import Education from '../components/Education';
+import Education from '../components/Education/Education';
 import Projects from '../components/Projects/Projects';
 import Footer from '../components/Footer/Footer';
 import SkillsCatalog from '../components/SkillsCatalog/SkillsCatalog';
 import Navbar from '../components/Navbar';
 import BlogPosts from '../components/BlogPosts/BlogPosts';
+import styled from 'styled-components';
+
+const RowCol = styled.section`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+`;
 
 export default function Home() {
   return (
@@ -14,9 +21,11 @@ export default function Home() {
       <Navbar />
       <EarthJournal />
       <Projects />
-      <Education />
+      <RowCol>
+        <Education />
+        <BlogPosts />
+      </RowCol>
       <SkillsCatalog />
-      <BlogPosts />
       <Footer />
     </div>
   );

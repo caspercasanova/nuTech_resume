@@ -10,11 +10,10 @@ export default function Art() {
       <Navbar />
       <div>
         This is some art of mine. All have been made using
-        Photoshop. I like gradients and have been into the
-        vaporwave scene for some years and want to explore
-        more animated Artforms and as well as Screen and
-        Direct-to-Garment print. I have many more Arts, ask
-        me about them.{' '}
+        Photoshop. I like Lines, Gradients, the Vaporwave
+        Aesthetic. I want to explore more animated Artforms,
+        3D art as well as Screen and Direct-to-Garment
+        printing. I have many more Arts, ask me about them.{' '}
       </div>
       <PictureGrid />
     </div>

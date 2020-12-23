@@ -4,10 +4,14 @@ import styled from 'styled-components';
 import NetworkSVG from '../../assets/Svgs/NetworkSVG';
 
 const LetsWorkTogetherCard = styled.div`
-  border: 1px solid cyan;
+  border: 1px solid #426ba7;
   padding: 10px 14px;
   border-radius: 4px;
   max-width: 50ch;
+  transition: transform 0.1s ease-in;
+  &:hover {
+    box-shadow: 0 1px 3px 1px #426ba7;
+  }
 `;
 
 const LetsWorkHeader = styled.div`
