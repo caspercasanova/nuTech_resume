@@ -49,8 +49,8 @@ export default function EarthJournal() {
             <Socials />
             <i>
               "I hold true to an Engineering Principle in
-              where the best software manifests when
-              developers’ tools and technologies are
+              where the best software manifests when a
+              developer's tools and technologies are
               Democratized so walks of all life are
               empowered by their use. "
             </i>

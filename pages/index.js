@@ -5,9 +5,9 @@ import Education from '../components/Education/Education';
 import Projects from '../components/Projects/Projects';
 import Footer from '../components/Footer/Footer';
 import SkillsCatalog from '../components/SkillsCatalog/SkillsCatalog';
-import Navbar from '../components/Navbar';
 import BlogPosts from '../components/BlogPosts/BlogPosts';
 import styled from 'styled-components';
+import GlowCorner from '../components/GlowCorner';
 
 const RowCol = styled.section`
   display: flex;
@@ -18,7 +18,7 @@ const RowCol = styled.section`
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Navbar />
+      <GlowCorner top={true} />
       <EarthJournal />
       <Projects />
       <RowCol>
@@ -27,6 +27,7 @@ export default function Home() {
       </RowCol>
       <SkillsCatalog />
       <Footer />
+      <GlowCorner bottom={true} />
     </div>
   );
 }

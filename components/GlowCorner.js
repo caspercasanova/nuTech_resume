@@ -53,6 +53,7 @@ const TopCorners = styled(Corners)`
   }
 `;
 const BottomCorners = styled(Corners)`
+  bottom: 10px;
   &:before {
     left: 0;
     border-width: 0 0 3px 3px;

@@ -22,21 +22,32 @@ const projectInfos = [
     githubLink:
       'https://github.com/caspercasanova/project_x',
     schematics: [],
-    link: '/projectX',
+    websiteLink: 'https://project-y-oihk8u6f3.vercel.app',
+    link: '/project-X',
   },
   {
     about: 'Project Y',
-    date: '2020-15-10',
+    date: '2021',
     bulletPoints: [
-      'Next.JS Ecommerce Application',
-      'Stripe Integrated and Deployed Using Vercel',
-      'Generates and Renders Business Analytics.',
+      'SSR Ecommerce web application built with Next.js.',
+      'Leverages cloud functions for Stripe payment processing.',
+      'Heavy use of SVG charts to display product, brand and user analytics.',
+      'MongoDB for storing merchandise, brand and user data.',
+      'A seed file can be found here.',
+      'Deployed through Vercel and invokes cloud / lambda functions.',
     ],
-    technologies: ['Next.js', 'Stripe', 'Mongodb'],
+    technologies: [
+      'Next.js',
+      'Stripe',
+      'Mongodb',
+      'Vercel',
+      'SASS',
+    ],
     githubLink:
       'https://github.com/caspercasanova/project-y',
     schematics: [],
-    link: '/projectX',
+    websiteLink: 'https://project-y-oihk8u6f3.vercel.app',
+    link: '/project-Y',
   },
   {
     about: 'Project Z',
@@ -49,7 +60,8 @@ const projectInfos = [
     technologies: ['Next.js', 'Jest', 'Three.js'],
     githubLink: 'github.com',
     schematics: [],
-    link: '/projectZ',
+    websiteLink: 'https://project-z-nine.vercel.app/',
+    link: '/project-Z',
   },
 ];
 

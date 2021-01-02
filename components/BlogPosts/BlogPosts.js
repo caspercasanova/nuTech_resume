@@ -42,10 +42,20 @@ export default function BlogPosts() {
       <BlogPostBody>
         <BlogList>
           <li>
-            <a>Starting A New Project</a>
+            <a
+              href={
+                'https://nhjlopez.medium.com/front-end-dev-mantras-1523ee445a96'
+              }>
+              Front End Dev Mantras
+            </a>
           </li>
           <li>
-            <a>Resources For Devs 2021</a>
+            <a
+              href={
+                'https://nhjlopez.medium.com/some-programmer-resources-37d232dcad69'
+              }>
+              Some Developer Resources
+            </a>
           </li>
           <li>
             <a>Front End Dev Mantras for 2021</a>
