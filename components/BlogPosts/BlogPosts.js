@@ -43,6 +43,7 @@ export default function BlogPosts() {
         <BlogList>
           <li>
             <a
+              target="_blank"
               href={
                 'https://nhjlopez.medium.com/front-end-dev-mantras-1523ee445a96'
               }>
@@ -51,6 +52,7 @@ export default function BlogPosts() {
           </li>
           <li>
             <a
+              target="_blank"
               href={
                 'https://nhjlopez.medium.com/some-programmer-resources-37d232dcad69'
               }>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Socials from '../Socials';
+import Socials from '../common/Socials';
 import styled from 'styled-components';
 import NetworkSVG from '../../assets/Svgs/NetworkSVG';
 

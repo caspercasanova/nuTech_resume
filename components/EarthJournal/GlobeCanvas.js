@@ -5,7 +5,6 @@ import { OrbitControls } from 'drei';
 import styles from '../../styles/Home.module.css';
 import Marker from './Marker';
 import Globe from './Globe';
-import GlowCorner from '../GlowCorner';
 
 const GroupThing = ({ idx, setIdx }) => {
   const groupRef = useRef();

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Journal from './Journal';
-import Socials from '../Socials';
+import Socials from '../common/Socials';
 import GlobeCanvas from './GlobeCanvas';
 import JournalEntries from './JournalEntries';
 import styled from 'styled-components';
@@ -18,7 +18,7 @@ const Me = styled.div`
   }
 `;
 
-const EarthJournalContainer = styled.div`
+const EarthJournalContainer = styled.section`
   display: flex;
   width: 100%;
   height: 600px;

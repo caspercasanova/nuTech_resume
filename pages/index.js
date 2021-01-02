@@ -7,7 +7,7 @@ import Footer from '../components/Footer/Footer';
 import SkillsCatalog from '../components/SkillsCatalog/SkillsCatalog';
 import BlogPosts from '../components/BlogPosts/BlogPosts';
 import styled from 'styled-components';
-import GlowCorner from '../components/GlowCorner';
+import GlowCorner from '../components/ui/GlowCorner';
 
 const RowCol = styled.section`
   display: flex;

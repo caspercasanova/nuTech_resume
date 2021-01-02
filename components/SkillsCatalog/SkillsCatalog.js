@@ -15,10 +15,10 @@ const SkillsSectionHeader = styled.div`
 const SkillsSectionBody = styled.div``;
 
 const SkillsContainer = styled.div`
-  width: 700px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 `;
 const RealmsContainers = styled.div`
   display: flex;
@@ -57,41 +57,6 @@ export default function SkillsCatalog() {
         <h3>Skills And Tooling</h3>
       </SkillsSectionHeader>
       <hr />
-      <RealmsContainers>
-        <SkillsButtons
-          classname={`${
-            hovered == 'frontend' ? 'active' : null
-          }`}
-          onPointerOver={() => setHovered('frontend')}
-          onPointerOut={() => setHovered('nothing')}>
-          FrontEnd
-        </SkillsButtons>
-        <SkillsButtons
-          classname={`${
-            hovered == 'devops' ? 'active' : null
-          }`}
-          onPointerOver={() => setHovered('devops')}
-          onPointerOut={() => setHovered('nothing')}>
-          DevOps
-        </SkillsButtons>
-        <SkillsButtons
-          classname={`${
-            hovered == 'backend' ? 'active' : null
-          }`}
-          onPointerOver={() => setHovered('backend')}
-          onPointerOut={() => setHovered('nothing')}>
-          BackEnd
-        </SkillsButtons>
-        <SkillsButtons
-          classname={`${
-            hovered == 'tools' ? 'active' : null
-          }`}
-          onPointerOver={() => setHovered('tools')}
-          onPointerOut={() => setHovered('nothing')}>
-          Extra Tools
-        </SkillsButtons>
-      </RealmsContainers>
-      <hr />
       <SkillsContainer>
         {links.map((skill, index) => (
           <SkillTile
@@ -104,3 +69,42 @@ export default function SkillsCatalog() {
     </SkillsSection>
   );
 }
+
+const RealmsSelectors = () => {
+  return (
+    <RealmsContainers>
+      <SkillsButtons
+        classname={`${
+          hovered == 'frontend' ? 'active' : null
+        }`}
+        onPointerOver={() => setHovered('frontend')}
+        onPointerOut={() => setHovered('nothing')}>
+        FrontEnd
+      </SkillsButtons>
+      <SkillsButtons
+        classname={`${
+          hovered == 'devops' ? 'active' : null
+        }`}
+        onPointerOver={() => setHovered('devops')}
+        onPointerOut={() => setHovered('nothing')}>
+        DevOps
+      </SkillsButtons>
+      <SkillsButtons
+        classname={`${
+          hovered == 'backend' ? 'active' : null
+        }`}
+        onPointerOver={() => setHovered('backend')}
+        onPointerOut={() => setHovered('nothing')}>
+        BackEnd
+      </SkillsButtons>
+      <SkillsButtons
+        classname={`${
+          hovered == 'tools' ? 'active' : null
+        }`}
+        onPointerOver={() => setHovered('tools')}
+        onPointerOut={() => setHovered('nothing')}>
+        Extra Tools
+      </SkillsButtons>
+    </RealmsContainers>
+  );
+};

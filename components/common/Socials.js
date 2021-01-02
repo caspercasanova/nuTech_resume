@@ -1,7 +1,7 @@
 import React from 'react';
-import Github from '../assets/Svgs/Github';
-import LinkedIn from '../assets/Svgs/LinkedIn';
-import Mail from '../assets/Svgs/Mail';
+import Github from '../../assets/Svgs/Github';
+import LinkedIn from '../../assets/Svgs/LinkedIn';
+import Mail from '../../assets/Svgs/Mail';
 import styled from 'styled-components';
 
 const ButtonContainer = styled.div`

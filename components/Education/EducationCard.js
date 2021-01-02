@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-const EducationCardContainer = styled.div`
+const EducationCardContainer = styled.article`
   max-width: 50ch;
   padding: 8px 12px;
   border-radius: 4px;
@@ -30,7 +30,7 @@ const InfoBox = styled.div`
 const EducationCardHeader = styled.div`
   display: flex;
 `;
-const CardHeaderTitle = styled.div`
+const CardHeaderTitle = styled.header`
   display: flex;
   flex-direction: column;
   padding-left: 10px;

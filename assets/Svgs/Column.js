@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Icon from '../../components/Icon';
+import Icon from '../../components/ui/Icon';
 
 const SVG = styled(Icon)`
   width: 60px;

@@ -9,15 +9,7 @@ const FooterSection = styled.section`
   margin-top: 10px;
 `;
 
-const SideFooter = () => {
-  return (
-    <div>
-      <AnalogClocks />
-      <div>People Who have visited: 1000: JoshCam</div>
-    </div>
-  );
-};
-const FooterBody = styled.div`
+const FooterBody = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -54,3 +46,12 @@ export default function Footer() {
     </FooterSection>
   );
 }
+
+const SideFooter = () => {
+  return (
+    <div>
+      <AnalogClocks />
+      <div>People Who have visited: 1000: JoshCam</div>
+    </div>
+  );
+};
