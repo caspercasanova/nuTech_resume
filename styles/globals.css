@@ -10,10 +10,6 @@ body {
   color: rgb(227, 233, 240);
 }
 
-#__next {
-  width: 100%;
-}
-
 * {
   box-sizing: border-box;
 }

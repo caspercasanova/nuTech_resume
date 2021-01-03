@@ -10,7 +10,9 @@ const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
+  border: 2px solid #426ba7;
   @media ${device.mobileS} {
     margin: 0;
   }
@@ -18,14 +20,17 @@ const Container = styled.main`
   }
 
   @media ${device.laptop} {
-    max-width: 800px;
+    /* max-width: 800px; */
   }
 
   @media ${device.desktop} {
-    max-width: 1400px;
     margin: 0px auto;
     padding-top: 18px;
     padding-bottom: 24px;
+  }
+
+  @media ${device.desktopL} {
+    margin: 0px auto;
   }
 
   & a {
