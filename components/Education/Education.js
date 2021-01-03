@@ -4,21 +4,10 @@ import HackReactor from '../../assets/Svgs/HackReactor';
 import Column from '../../assets/Svgs/Column';
 import Image from 'next/image';
 import EducationCard from './EducationCard';
-const EducationSection = styled.section`
-  width: 100%;
-`;
-const EducationSectionHeader = styled.div`
-  display: flex;
-  align-items: center;
-`;
-const EducationSectionBody = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
 
 export default function Education() {
   return (
-    <EducationSection>
+    <EducationSection id={'education'}>
       <EducationSectionHeader>
         <Column />
         <h3>Education</h3>
@@ -65,3 +54,16 @@ export default function Education() {
     </EducationSection>
   );
 }
+
+const EducationSection = styled.section`
+  width: 100%;
+`;
+const EducationSectionBody = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+const EducationSectionHeader = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+`;

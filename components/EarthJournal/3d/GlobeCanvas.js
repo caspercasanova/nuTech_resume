@@ -1,19 +1,26 @@
-import React, { Suspense, useRef } from 'react';
-import JournalEntries from './JournalEntries';
+import React, { Suspense, useRef, useState } from 'react';
+import JournalEntries from '../JournalEntries';
 import { Canvas, useFrame } from 'react-three-fiber';
 import { OrbitControls } from 'drei';
-import styles from '../../styles/Home.module.css';
+import styles from '../../../styles/Home.module.css';
 import Marker from './Marker';
 import Globe from './Globe';
 
 const GroupThing = ({ idx, setIdx }) => {
   const groupRef = useRef();
+  const [hovered, set] = useState(false);
 
   useFrame(() => {
-    groupRef.current.rotation.y += 0.001;
+    hovered
+      ? (groupRef.current.rotation.y += 0)
+      : (groupRef.current.rotation.y += 0.002);
   });
+
   return (
-    <group ref={groupRef}>
+    <group
+      ref={groupRef}
+      onPointerMove={() => set(true)}
+      onPointerOut={() => set(false)}>
       <Suspense fallback={<>...Loading</>}>
         <Globe idx={idx} setIdx={setIdx} />
       </Suspense>
@@ -37,8 +44,9 @@ export default function GlobeCanvas({ idx, setIdx }) {
     <>
       <Canvas
         className={styles.globe_canvas}
-        camera={{ position: [0, 0, 25] }}>
-        <OrbitControls maxDistance={18} minDistance={18} />
+        camera={{
+          position: [0, 0, 18],
+        }}>
         <ambientLight intensity={1} />
         <GroupThing idx={idx} setIdx={setIdx} />
       </Canvas>

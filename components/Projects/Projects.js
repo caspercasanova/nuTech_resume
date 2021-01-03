@@ -76,7 +76,7 @@ const ProjectsHeader = styled.div`
 
 export default function Projects() {
   return (
-    <ProjectsSection>
+    <ProjectsSection id="projects">
       <ProjectsHeader>
         <ProjectSvg />
         <h3>Projects</h3>

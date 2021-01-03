@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import Journal from './Journal';
 import Socials from '../common/Socials';
-import GlobeCanvas from './GlobeCanvas';
+import GlobeCanvas from './3d/GlobeCanvas';
 import JournalEntries from './JournalEntries';
 import styled from 'styled-components';
 
-const Me = styled.div`
+const Me = styled.section`
   background-color: #111216;
-  border-radius: 4px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 10px;
   padding: 10px;
   & h1 {
     font-size: 40px;
@@ -21,46 +22,47 @@ const Me = styled.div`
 const EarthJournalContainer = styled.section`
   display: flex;
   width: 100%;
+  justify-content: center;
+  align-items: center;
   height: 600px;
-  /* border: 1px solid #131a22; */
-  // background-color: #131a22;
   overflow: hidden;
   border-radius: 4px;
 `;
 
-const SideBar = styled.div`
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin-left: 10px;
-`;
+/* 
+<SideBar>
+          <Journal
+            journalEntry={JournalEntries[idx]}
+            idx={idx}
+          />
+        </SideBar> */
 
 export default function EarthJournal() {
   const [idx, setIdx] = useState(0);
 
   return (
-    <EarthJournalContainer>
-      <GlobeCanvas setIdx={setIdx} idx={idx} />
-      <SideBar>
-        <Me>
-          <div>
-            <div>SOFTWARE ENGINEER / ADVENTURER</div>
-            <h1>Nicholas Lopez</h1>
-            <Socials />
-            <i>
-              "I hold true to an Engineering Principle in
-              where the best software manifests when a
-              developer's tools and technologies are
-              Democratized so walks of all life are
-              empowered by their use. "
-            </i>
-          </div>
-        </Me>
-        <Journal
-          journalEntry={JournalEntries[idx]}
-          idx={idx}
-        />
-      </SideBar>
-    </EarthJournalContainer>
+    <section>
+      <EarthJournalContainer>
+        <GlobeCanvas setIdx={setIdx} idx={idx} />
+      </EarthJournalContainer>
+      <Me id={'me'}>
+        <div>
+          <div>SOFTWARE ENGINEER / ADVENTURER</div>
+          <h1>Nicholas Lopez</h1>
+          <Socials />
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skils</a>
+          <a href="#blogs">Blogs</a>
+          <i>
+            "I hold true to an Engineering Principle in
+            where the best software manifests when a
+            developer's tools and technologies are
+            Democratized so walks of all life are empowered
+            by their use. "
+          </i>
+        </div>
+      </Me>
+    </section>
   );
 }

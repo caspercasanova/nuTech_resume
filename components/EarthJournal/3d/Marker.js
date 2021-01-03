@@ -8,7 +8,7 @@ import { Html } from 'drei';
 import * as THREE from 'three';
 import styled from 'styled-components';
 import { useLoader } from 'react-three-fiber';
-import styles from '../../styles/Home.module.css';
+import styles from '../../../styles/Home.module.css';
 export default function Marker({
   active = false,
   onClick,

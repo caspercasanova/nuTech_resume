@@ -6,17 +6,19 @@ const PictureContainer = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid transparent;
   transition: transform 1.1s ease-in;
+  padding: 12px;
   &:hover {
     border: 1px solid orange;
   }
   & img {
-    width: 514px;
+    width: 100%;
+    max-width: 600px;
     height: auto;
   }
 `;
@@ -29,6 +31,12 @@ const Title = styled.h3`
   justify-content: center;
   align-items: center;
 `;
+const TitleContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 export default function Picture({
   src,
@@ -40,17 +48,21 @@ export default function Picture({
   return flip ? (
     <PictureContainer>
       <img src={src} alt={alt} />
-      <Title>
-        <div>{title}</div>
-        <div>{created}</div>
-      </Title>
+      <TitleContainer>
+        <Title>
+          <div>{title}</div>
+          <div>{created}</div>
+        </Title>
+      </TitleContainer>
     </PictureContainer>
   ) : (
     <PictureContainer>
-      <Title>
-        <div>{title}</div>
-        <div>{created}</div>
-      </Title>
+      <TitleContainer>
+        <Title>
+          <div>{title}</div>
+          <div>{created}</div>
+        </Title>
+      </TitleContainer>
       <img src={src} alt={alt} />
     </PictureContainer>
   );

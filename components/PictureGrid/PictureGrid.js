@@ -8,6 +8,19 @@ const GridContainer = styled.div`
   width: 100%;
 `;
 
+const PictureNav = styled.nav`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+{
+  /* <nav>
+    <button>»</button>
+    <button>«</button>
+  </nav> */
+}
+
 export default function PictureGrid() {
   return (
     <GridContainer>

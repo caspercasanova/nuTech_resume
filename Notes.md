@@ -13,7 +13,7 @@ This Is A Subtle ToDos MD.
 
 ## TODOS Functionality
 []: Landing Section
-[]: Globe Location
+[x]: Globe Location
 []: Birthday Timer
 []: About
 [X]: Skills Cards
@@ -21,7 +21,7 @@ This Is A Subtle ToDos MD.
 []: Github Graph
 []: Project Cards
 [X]: Education
-[]: Blog Posts
+[x]: Blog Posts
   - Things From Some Readings
   - Random Generation
   - Hodgepodge Of Resources
