@@ -11,6 +11,7 @@ const Container = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
   width: 100%;
   border: 2px solid #426ba7;
   @media ${device.mobileS} {

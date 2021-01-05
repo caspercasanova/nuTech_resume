@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ContactMe() {
+export default function ContactForm() {
   return (
     <section>
       <form>

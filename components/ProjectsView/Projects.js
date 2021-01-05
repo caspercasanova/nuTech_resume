@@ -6,9 +6,10 @@ const projectInfos = [
   {
     about: 'Project X',
     date: '2020-15-10',
-    why: '',
-    objective: '',
-    starterMaterials: '',
+    why:
+      'I wanted to further my expertise with back end technologies and diversify myself by exploring the capabilities of a graph database. I also wanted to utilize GraphQL for one project and figured a backend project like Project X would be perfect for it.',
+    objective:
+      'Find relationships between stock data and / or Seed a database to replicate Time Series Data',
     bulletPoints: [
       'The Seeding Script is capable of replicating parties that will occur for the next week',
       'Social Media functionality. Add/Remove Friends. Block Users. Create Groups and Join Parties in a group',
@@ -22,7 +23,8 @@ const projectInfos = [
       'Docker',
       'Three.Js',
     ],
-    starterMaterials: '',
+    inspiration: ['https://medium.com/applied-data-science/exploring-stocks-in-the-london-stock-exchange-using-graph-networks-in-neo4j-part-1-58a5455084ab'],
+    starterMaterials: 'GRAND stack Starter app. O\'Reilly Graph Databases Book',
     links: {
       github: 'https://github.com/caspercasanova/project_x',
       liveView: 'https://project-y-oihk8u6f3.vercel.app',
@@ -32,9 +34,12 @@ const projectInfos = [
     schematics: [],
     websiteLink: 'https://project-y-oihk8u6f3.vercel.app',
     link: '/project-X',
-    mostDifficult: '',
-    whenDidIGetStuck: '',
-    whatILearned: '',
+    mostDifficult:
+      ['The amount of new Technologies I needed to learn. Luckily I know JavaScript and Node, but Neo4j has its own Query Language and before this I had only done tutorials on Apollo and GraphQl servers. Normally too many unfamiliar technologies at once can deter and hinder my learning process, I maintained consistency and bit by bit got closer to a goal.', 'Generating connected data also became somewhat of a challenge as it required me to change my mental model of what I data points I required.'],
+    whenDidIGetStuck:
+      'Everything in the initial setup was difficult. I think the first steps are always the hardest especially with a new technology. Establishing a proper and maintable code structure for the database was most difficult as I was alone and had little refernce for best practices.',
+    whatILearned:
+      'Graph Databases like Neo4j provide something NonSQL and SQL databases cant. I dont believe there is a silver bullet technology, I believe in more of a shotgun spread approach. I am sure every modern application could find a useful service for a graph database and Neo4j would be the proper choice. The Query Language is not super difficult to understand (Mastering is another thing entirely).',
   },
   {
     about: 'Project Y',

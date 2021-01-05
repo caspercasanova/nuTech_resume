@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import link from 'next/link';
+import Link from 'next/link';
 const NavigationWrapper = styled.div`
   width: 100%;
   max-width: 800px;
@@ -37,23 +37,36 @@ export default function Navigation() {
       <NavigationWrapper>
         <Nav>
           <NavButtonContainer>
-            <button>About</button>
-            <button>Contact</button>
+            <Link href="/">
+              <button>Home</button>
+            </Link>
+            <Link href="/about">
+              <button>About</button>
+            </Link>
+            <Link href="/contact">
+              <button>Contact</button>
+            </Link>
+            <Link href={'/art'}>
+              <button>Art</button>
+            </Link>
             <button
               onMouseOver={() => set(true)}
               onMouseOut={() => set(false)}>
               Projects
             </button>
-            <button>Art</button>
           </NavButtonContainer>
         </Nav>
         {hovered && (
           <SubLinksNav hidden={!hovered}>
-            <div>links</div>
-            <div>links</div>
-            <div>links</div>
-            <div>links</div>
-            <div>links</div>
+            <Link href={'/project/projectX'}>
+              <button>Project X</button>
+            </Link>
+            <Link href={'/project/projecty'}>
+              <button>Project Y</button>
+            </Link>
+            <Link href={'/project/projectZ'}>
+              <button>Project Z</button>
+            </Link>
           </SubLinksNav>
         )}
       </NavigationWrapper>

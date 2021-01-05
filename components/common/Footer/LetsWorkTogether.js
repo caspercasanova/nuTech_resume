@@ -1,7 +1,7 @@
 import React from 'react';
-import Socials from '../common/Socials';
+import Socials from '../Socials';
 import styled from 'styled-components';
-import NetworkSVG from '../../assets/Svgs/NetworkSVG';
+import NetworkSVG from '../../../assets/Svgs/NetworkSVG';
 
 const LetsWorkTogetherCard = styled.div`
   border: 1px solid #426ba7;

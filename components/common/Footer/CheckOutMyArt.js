@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ArtIcon from '../../assets/Svgs/ArtIcon';
+import ArtIcon from '../../../assets/Svgs/ArtIcon';
 import Link from 'next/link';
 
 const CheckOutContainer = styled.div`
