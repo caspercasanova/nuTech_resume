@@ -1,14 +1,16 @@
 import React from 'react';
-import MainContainer from '../../components/ui/MainContainer';
-import ContactForm from '../../components/common/ContactForm';
+import LetsWorkTogether from '../../components/common/LetsWorkTogether';
 import Navigation from '../../components/common/Navigation';
-import Footer from '../../components/common/Footer/Footer';
-
+import MainContainer from '../../components/ui/MainContainer';
+import Footer from '../../components/common/Footer';
+import MainContent from '../../components/ui/MainContent';
 export default function Contact() {
   return (
     <MainContainer>
       <Navigation />
-      <ContactForm />
+      <MainContent>
+        <LetsWorkTogether />
+      </MainContent>
       <Footer />
     </MainContainer>
   );

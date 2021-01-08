@@ -3,7 +3,10 @@ import { useLoader } from 'react-three-fiber';
 import * as THREE from 'three';
 
 export default function Globe({ idx, setIdx }) {
-  const map = useLoader(THREE.TextureLoader, './world.png');
+  const map = useLoader(
+    THREE.TextureLoader,
+    './images/worldLight.png'
+  );
 
   return map ? (
     <mesh>

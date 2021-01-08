@@ -12,7 +12,7 @@ const GroupThing = ({ idx, setIdx }) => {
 
   useFrame(() => {
     hovered
-      ? (groupRef.current.rotation.y += 0)
+      ? (groupRef.current.rotation.y += 0.001)
       : (groupRef.current.rotation.y += 0.002);
   });
 

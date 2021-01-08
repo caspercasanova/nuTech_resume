@@ -42,12 +42,12 @@ export default function Bio() {
         <p>
           I am interested in many domains. Obviously
           Software, but I think my parents passed to me an
-          analytical mind. I like numbers, lines and love
-          Infographic / Schematics. I enjoy the mental
-          exercise of breaking things down to understand
-          them and will always be researching Technologies,
-          Economics, Health, Sports, Cars, Aviation, Gaming,
-          and Writing.
+          analytical mind, so I like numbers, lines,
+          mysteries and schematics. I enjoy throught
+          provoking execises and disecting things to their
+          core. I think I will always be researching topics
+          in Technology, Economics, Health, Sports, Cars,
+          Aviation, Gaming, and Writing.
         </p>
         <p>
           I'm a big House / Garage head and dig for Chopped

@@ -10,10 +10,8 @@ const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
   width: 100%;
-  border: 2px solid #426ba7;
   @media ${device.mobileS} {
     margin: 0;
   }
@@ -32,15 +30,5 @@ const Container = styled.main`
 
   @media ${device.desktopL} {
     margin: 0px auto;
-  }
-
-  & a {
-    font-size: 14px;
-    transition: transform 0.1s ease-in;
-    &:hover {
-      cursor: pointer;
-      color: #426ba7;
-      text-decoration: underline;
-    }
   }
 `;

@@ -42,18 +42,11 @@ export default function EarthJournal() {
 
   return (
     <section>
-      <EarthJournalContainer>
-        <GlobeCanvas setIdx={setIdx} idx={idx} />
-      </EarthJournalContainer>
       <Me id={'me'}>
         <div>
           <div>SOFTWARE ENGINEER / ADVENTURER</div>
           <h1>Nicholas Lopez</h1>
           <Socials />
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#skills">Skils</a>
-          <a href="#blogs">Blogs</a>
           <i>
             "I hold true to an Engineering Principle in
             where the best software manifests when a
@@ -63,6 +56,9 @@ export default function EarthJournal() {
           </i>
         </div>
       </Me>
+      <EarthJournalContainer>
+        <GlobeCanvas setIdx={setIdx} idx={idx} />
+      </EarthJournalContainer>
     </section>
   );
 }

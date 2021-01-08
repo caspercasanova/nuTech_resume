@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import PictureGrid from '../../components/PictureGrid/PictureGrid';
-import Navbar from '../../components/ui/Navbar';
+import Footer from '../../components/common/Footer';
 import styles from '../../styles/Home.module.css';
-// https://formidable.com/about/
+import MainContainer from '../../components/ui/MainContainer';
+import MainContent from '../../components/ui/MainContent';
 import Link from 'next/link';
-
-const ArtContainer = styled.section`
-  width: 100%;
-  min-height: 100vh;
-  padding: 5px;
-`;
 
 export default function Art() {
   const [acknowledge, setAcknowled] = useState(false);
@@ -20,14 +15,17 @@ export default function Art() {
       acknowledgeFunc={() => setAcknowled(true)}
     />
   ) : (
-    <ArtContainer>
+    <MainContainer>
       <header>
         <Link href="/">
           <button> Go Back</button>
         </Link>
       </header>
-      <PictureGrid />
-    </ArtContainer>
+      <MainContent>
+        <PictureGrid />
+      </MainContent>
+      <Footer />
+    </MainContainer>
   );
 }
 
