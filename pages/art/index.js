@@ -7,9 +7,11 @@ import styles from '../../styles/Home.module.css';
 export default function Art() {
   const [acknowledge, setAcknowled] = useState(false);
   return !acknowledge ? (
-    <DontJudgeMe
-      acknowledgeFunc={() => setAcknowled(true)}
-    />
+    <MainContainer>
+      <DontJudgeMe
+        acknowledgeFunc={() => setAcknowled(true)}
+      />
+    </MainContainer>
   ) : (
     <MainContainer>
       <PictureGrid />
@@ -18,8 +20,6 @@ export default function Art() {
 }
 
 const AcknowledgeSection = styled.section`
-  width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

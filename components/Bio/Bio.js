@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const BioWrapper = styled.section`
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 `;
 
 const Header = styled.header`
