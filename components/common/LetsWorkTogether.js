@@ -15,9 +15,9 @@ export default function LetsWorkTogether() {
         Feel free to shoot me a message, I am always willing
         to chop it up with new faces.
       </p>
+      <Socials />
       <hr />
       <ContactForm />
-      <Socials />
     </div>
   );
 }

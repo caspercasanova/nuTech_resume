@@ -12,6 +12,8 @@ This Is A Subtle ToDos MD.
 []: Art Link
 
 ## TODOS Functionality
+[]: Download Art Button
+[]: Projects Pages
 []: Landing Section
 [x]: Globe Location
 []: Birthday Timer

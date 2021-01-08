@@ -2,11 +2,11 @@
 import EarthJournal from '../components/EarthJournal/EarthJournal';
 import MainContainer from '../components/common/MainContainer';
 
-import Education from '../components/Education/Education';
-import Projects from '../components/ProjectsView/Projects';
-import SkillsCatalog from '../components/SkillsCatalog/SkillsCatalog';
-import BlogPosts from '../components/BlogPosts/BlogPosts';
-import RowSection from '../components/ui/RowSection';
+// import Education from '../components/Education/Education';
+// import Projects from '../components/ProjectsView/Projects';
+// import SkillsCatalog from '../components/SkillsCatalog/SkillsCatalog';
+// import BlogPosts from '../components/BlogPosts/BlogPosts';
+// import RowSection from '../components/ui/RowSection';
 /* 
 <Projects />
         <RowSection>

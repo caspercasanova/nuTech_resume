@@ -2,33 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Github from '../../assets/Svgs/Github';
 
-const ProjectContainer = styled.article`
-  position: relative;
-  padding: 6px 9px;
-  border-radius: 4px;
-  border: 1px solid rgb(66, 149, 128);
-  margin: 10px;
-  transition: transform 0.1s ease-in;
-  cursor: pointer;
-
-  & :after {
-    content: '';
-    position: absolute;
-    width: 15%;
-    top: 0;
-    right: 10%;
-    height: 3px;
-    border-radius: 1px;
-    background-color: #426ba7;
-    transition: all 0.75s ease-in;
-  }
-  & :hover {
-    box-shadow: 0 1px 3px 1px rgb(66, 149, 128);
-    & :after {
-      width: 30%;
-    }
-  }
-`;
+const ProjectContainer = styled.article``;
 
 const GithubIcon = styled(Github)`
   width: 35px;

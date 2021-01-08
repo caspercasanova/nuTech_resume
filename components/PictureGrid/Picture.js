@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+const Card = styled.article`
+  width: 100%;
+  display: flex;
+`;
 
 const PictureContainer = styled.div`
   position: relative;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,7 +14,6 @@ const PictureContainer = styled.div`
   margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid transparent;
-  transition: transform 1.1s ease-in;
   padding: 12px;
   &:hover {
     border: 1px solid orange;
@@ -24,7 +26,7 @@ const PictureContainer = styled.div`
 `;
 
 const Title = styled.h3`
-  font-size: 10px;
+  font-size: 17px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -32,7 +34,7 @@ const Title = styled.h3`
   align-items: center;
 `;
 const TitleContainer = styled.div`
-  width: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,24 +48,28 @@ export default function Picture({
   flip,
 }) {
   return flip ? (
-    <PictureContainer>
-      <img src={src} alt={alt} />
+    <Card>
+      <PictureContainer>
+        <img src={src} alt={alt} />
+      </PictureContainer>
       <TitleContainer>
         <Title>
-          <div>{title}</div>
-          <div>{created}</div>
+          <span>{title}</span>
+          <span>{created}</span>
         </Title>
       </TitleContainer>
-    </PictureContainer>
+    </Card>
   ) : (
-    <PictureContainer>
+    <Card>
       <TitleContainer>
         <Title>
-          <div>{title}</div>
-          <div>{created}</div>
+          <span>{title}</span>
+          <span>{created}</span>
         </Title>
       </TitleContainer>
-      <img src={src} alt={alt} />
-    </PictureContainer>
+      <PictureContainer>
+        <img src={src} alt={alt} />
+      </PictureContainer>
+    </Card>
   );
 }
