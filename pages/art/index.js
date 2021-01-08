@@ -1,30 +1,18 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import PictureGrid from '../../components/PictureGrid/PictureGrid';
-import Footer from '../../components/common/Footer';
+import MainContainer from '../../components/common/MainContainer';
 import styles from '../../styles/Home.module.css';
-import MainContainer from '../../components/ui/MainContainer';
-import MainContent from '../../components/ui/MainContent';
-import Link from 'next/link';
 
 export default function Art() {
   const [acknowledge, setAcknowled] = useState(false);
-
   return !acknowledge ? (
     <DontJudgeMe
       acknowledgeFunc={() => setAcknowled(true)}
     />
   ) : (
     <MainContainer>
-      <header>
-        <Link href="/">
-          <button> Go Back</button>
-        </Link>
-      </header>
-      <MainContent>
-        <PictureGrid />
-      </MainContent>
-      <Footer />
+      <PictureGrid />
     </MainContainer>
   );
 }

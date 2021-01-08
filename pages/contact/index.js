@@ -1,17 +1,11 @@
 import React from 'react';
 import LetsWorkTogether from '../../components/common/LetsWorkTogether';
-import Navigation from '../../components/common/Navigation';
-import MainContainer from '../../components/ui/MainContainer';
-import Footer from '../../components/common/Footer';
-import MainContent from '../../components/ui/MainContent';
+import MainContainer from '../../components/common/MainContainer';
+
 export default function Contact() {
   return (
     <MainContainer>
-      <Navigation />
-      <MainContent>
-        <LetsWorkTogether />
-      </MainContent>
-      <Footer />
+      <LetsWorkTogether />
     </MainContainer>
   );
 }

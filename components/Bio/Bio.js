@@ -51,10 +51,10 @@ export default function Bio() {
         </p>
         <p>
           I'm a big House / Garage head and dig for Chopped
-          and Screwed (when done properly) tracks. I also
-          was / have been into Vaporwave when it was wierd.
-          I just like cool and different sounds and all
-          around good music. I made a{' '}
+          (not slopped) and Screwed tracks. I also was /
+          have been into Vaporwave when it was wierd. I just
+          like cool and different sounds and all around good
+          music. I made a{' '}
           <a
             href={
               'https://github.com/caspercasanova/slave1'

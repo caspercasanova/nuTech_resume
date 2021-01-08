@@ -1,17 +1,23 @@
 import React from 'react';
-import { device } from './devices';
+import { device } from '../ui/devices';
 import styled from 'styled-components';
+import Navigation from './Navigation';
+import MainContent from '../ui/MainContent';
 
 export default function MainContainer({ children }) {
-  return <Container>{children}</Container>;
+  return (
+    <Container>
+      <MainContent>{children}</MainContent>
+      <Navigation />
+    </Container>
+  );
 }
 
 const Container = styled.main`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
   width: 100%;
+  position: relative;
+
   @media ${device.mobileS} {
     margin: 0;
   }
