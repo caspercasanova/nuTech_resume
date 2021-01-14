@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import ComingSoon from '../../ui/ComingSoon';
 
-const ProjectViewSection = styled.section``;
+const ProjectViewSection = styled.section`
+  position: relative;
+`;
 
 const ProjectHeader = styled.header`
   display: flex;
@@ -44,7 +47,7 @@ export default function ProjectViewSample({
   } = project;
 
   return (
-    <div>
+    <ProjectViewSection>
       <header></header>
       <ProjectHeader>
         <h3>Name: {name}</h3>
@@ -151,7 +154,8 @@ export default function ProjectViewSample({
       </DetailSection>
 
       <footer></footer>
-    </div>
+      <ComingSoon />
+    </ProjectViewSection>
   );
 }
 

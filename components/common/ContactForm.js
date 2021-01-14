@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import Field from '../ui/Field';
+import ComingSoon from '../ui/ComingSoon';
+import styled from 'styled-components';
+
+const ContactFormWrapper = styled.section`
+  position: relative;
+`;
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -29,7 +35,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section>
+    <ContactFormWrapper>
       <form onSubmit={handleSubmit}>
         <Field
           placeholder="Email"
@@ -80,6 +86,7 @@ export default function ContactForm() {
         />
         <button type="submit">Submit</button>
       </form>
-    </section>
+      <ComingSoon />
+    </ContactFormWrapper>
   );
 }
