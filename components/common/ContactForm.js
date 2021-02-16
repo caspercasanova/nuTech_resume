@@ -2,12 +2,24 @@ import React, { useState } from 'react';
 import Field from '../ui/Field';
 import ComingSoon from '../ui/ComingSoon';
 import styled from 'styled-components';
-
+import TypedMessage from '../ui/TypedMessage';
 const ContactFormWrapper = styled.section`
   position: relative;
 `;
 
 export default function ContactForm() {
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const clearForm = () => {
+    setFormData({
+      email: '',
+      name: '',
+      company: '',
+      message: '',
+    });
+  };
+
   const [formData, setFormData] = useState({
     email: '',
     name: '',
@@ -15,9 +27,19 @@ export default function ContactForm() {
     message: '',
   });
 
+  const handleValidation = () => {
+    if (!email.length || !name.length || !message.length) {
+      setError(true);
+    } else {
+    }
+  };
+
   const handleSubmit = async e => {
     e.preventDefault();
 
+    if (error.length) {
+      return;
+    }
     // check for errors
     let data = await fetch('/api/contact', {
       method: 'POST',
@@ -26,10 +48,14 @@ export default function ContactForm() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(formData),
-    }).then(res => {
-      console.log(res);
-      return res;
-    });
+    }).then(response => response);
+
+    console.log(data);
+
+    if (data.status == 200) {
+      setSuccess(true);
+      clearForm();
+    }
 
     console.log('submit fired');
   };
@@ -62,7 +88,7 @@ export default function ContactForm() {
           }
         />
         <Field
-          placeholder="Company"
+          placeholder="Company [ Optional ]"
           value={formData.company}
           type="text"
           onChange={e =>
@@ -86,7 +112,19 @@ export default function ContactForm() {
         />
         <button type="submit">Submit</button>
       </form>
-      <ComingSoon />
+      {success && <SuccessThing />}
+
+      {/* <ComingSoon /> */}
     </ContactFormWrapper>
   );
 }
+
+const FormButton = styled.button``;
+
+const SuccessThing = () => {
+  return (
+    <div>
+      <TypedMessage message={'success!'} />
+    </div>
+  );
+};

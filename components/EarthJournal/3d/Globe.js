@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useLoader } from 'react-three-fiber';
 import * as THREE from 'three';
 
-export default function Globe({ idx, setIdx }) {
+export default function Globe() {
   const map = useLoader(
     THREE.TextureLoader,
     './images/worldLight.png'
